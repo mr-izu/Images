@@ -1,0 +1,23 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- ===== BLUE GRADIENT BACKGROUND ===== -->
+  <defs>
+    <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2196F3" />
+      <stop offset="100%" stop-color="#1565C0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- ===== SQUARE BADGE WITH SOFT CORNERS ===== -->
+  <rect x="20" y="20" width="120" height="120" rx="20" 
+        fill="url(#blue-gradient)" 
+        stroke="#0D47A1" 
+        stroke-width="2"/>
+  
+  <!-- ===== WHITE CHECKMARK ===== -->
+  <path d="M55 80 L75 100 L105 70" 
+        fill="none" 
+        stroke="#FFFFFF" 
+        stroke-width="10" 
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
