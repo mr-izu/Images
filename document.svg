@@ -2,10 +2,7 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
     <!-- Shield Base with Depth -->
     <path d="M64 12L24 28V56C24 72 48 92 64 100C80 92 104 72 104 56V28L64 12Z" fill="url(#shieldGradient)" stroke="url(#edgeShadow)" stroke-width="4"/>
-    
-    <!-- Checkmark with Highlight -->
-    <path d="M52 64L44 56L40 60L52 72L88 36L84 32L52 64Z" fill="white"/>
-    
+        
     <!-- Subtle Legal Ribbon -->
     <path d="M40 52L48 48L88 60L80 64L40 52Z" fill="white" opacity="0.3"/>
     
