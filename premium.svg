@@ -1,39 +1,35 @@
-<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-  <!-- ===== BACKGROUND GLOW ===== -->
-  <defs>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
-      <stop offset="0%" stop-color="#9C27B0" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#5E35B1" stop-opacity="0.2"/>
-    </radialGradient>
-    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-  </defs>
-  
-  <!-- ===== OUTER DIAMOND (METALLIC PURPLE) ===== -->
-  <path d="M80 20 L140 80 L80 140 L20 80 Z" 
-        fill="url(#glow)" 
-        stroke="#7B1FA2" 
-        stroke-width="2"
-        filter="url(#soft-glow)"/>
-  
-  <!-- ===== INNER DIAMOND (JEWEL CUT) ===== -->
-  <path d="M80 35 L125 80 L80 125 L35 80 Z" 
-        fill="#7E57C2" 
-        stroke="#5E35B1" 
-        stroke-width="1.5"/>
-  
-  <!-- ===== HIGHLIGHT EFFECT (3D DEPTH) ===== -->
-  <path d="M80 35 L125 80 L80 80 Z" 
-        fill="#FFFFFF" 
-        fill-opacity="0.15"/>
-  
-  <!-- ===== BOLD CHECKMARK (WHITE, CRISP) ===== -->
-  <path d="M55 80 L75 100 L105 70" 
-        fill="none" 
-        stroke="#FFFFFF" 
-        stroke-width="10" 
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-  </svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle with Premium Gold Gradient -->
+    <circle cx="64" cy="64" r="60" fill="url(#premiumGradient)"/>
+    
+    <!-- Crown Centerpiece with Detailed Design -->
+    <path d="M64 32L48 56L32 48L24 80L40 88L64 72L88 88L104 80L96 48L80 56L64 32Z" fill="white" stroke="#D4AF37" stroke-width="3"/>
+    
+    <!-- Jewel Details -->
+    <circle cx="64" cy="48" r="8" fill="#FFD700"/>
+    <circle cx="48" cy="64" r="6" fill="#FFD700"/>
+    <circle cx="80" cy="64" r="6" fill="#FFD700"/>
+    
+    <!-- Subtle Shine Effects -->
+    <path d="M64 36L68 44L76 46L68 48L64 56L60 48L52 46L60 44L64 36Z" fill="white" opacity="0.8"/>
+    
+    <!-- Outer Ring for Emphasis -->
+    <circle cx="64" cy="64" r="62" stroke="url(#borderGradient)" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 2" opacity="0.8"/>
+    
+    <!-- Gradients Definition -->
+    <defs>
+        <!-- Premium Gold Gradient -->
+        <linearGradient id="premiumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#D4AF37"/>
+            <stop offset="50%" stop-color="#F5D073"/>
+            <stop offset="100%" stop-color="#D4AF37"/>
+        </linearGradient>
+        
+        <!-- Border Gradient -->
+        <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.6"/>
+        </linearGradient>
+    </defs>
+</svg>
