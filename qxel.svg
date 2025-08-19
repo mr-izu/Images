@@ -1,0 +1,15 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Glow Ring (Subtle) -->
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#00A1E050" stroke-width="2"/>
+  
+  <!-- Modular "Q" (Enhanced) -->
+  <path d="M25,60 A35,35 0 1 1 95,60 A35,35 0 1 1 25,60 Z" 
+        fill="none" stroke="#00A1E0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M80,45 L105,20" fill="none" stroke="#00A1E0" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Quantum Dot (Center) -->
+  <circle cx="60" cy="60" r="12" fill="#00A1E0" opacity="0.8">
+    <animate attributeName="r" values="12;15;12" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+</svg>
