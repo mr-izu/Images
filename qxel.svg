@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200"><defs><linearGradient id="gradient" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs><circle cx="120" cy="100" r="50" fill="none" stroke="url(#gradient)" stroke-width="8"/><circle cx="120" cy="100" r="25" fill="none" stroke="url(#gradient)" stroke-width="5"/><path stroke="url(#gradient)" stroke-linecap="round" stroke-width="8" d="M145 75L175 55"/><text x="190" y="110" fill="#1e293b" font-family="Arial, sans-serif" font-size="60" font-weight="700">xel</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <defs>
+    <!-- Multi-gradient for text -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#12a89d"/>
+      <stop offset="35%" stop-color="#ff4d4d"/>
+      <stop offset="70%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <!-- Multi-gradient for geometric core -->
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12a89d"/>
+      <stop offset="40%" stop-color="#ff4d4d"/>
+      <stop offset="75%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Geometric core -->
+  <g filter="url(#glow)">
+    <circle cx="100" cy="100" r="80" fill="url(#coreGrad)" opacity="0.2"/>
+    <polygon points="100,40 160,100 100,160 40,100" fill="url(#coreGrad)" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="60" y1="100" x2="140" y2="100" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="100" y1="60" x2="100" y2="140" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+
+  <!-- QXEL Text -->
+  <text x="220" y="160" font-family="Inter, sans-serif" font-size="140" font-weight="900" fill="url(#textGrad)">
+    QXEL
+  </text>
+</svg>
